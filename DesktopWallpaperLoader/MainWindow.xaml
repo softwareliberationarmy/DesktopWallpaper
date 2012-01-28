@@ -1,0 +1,17 @@
+﻿<Window x:Class="DesktopWallpaperLoader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Height="350" Width="525" Title="Desktop Wallpaper Loader">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Name="btnLocate" Header="Locate Image..." BorderThickness="1" BorderBrush="Black" Click="btnLocate_Click"></MenuItem>
+            <MenuItem Name="btnSetWallpaper" Header="Set as Wallpaper" Click="btnSetWallpaper_Click"/>
+            <MenuItem Name="btnExit" Header="Exit" HorizontalAlignment="Right" Click="btnExit_Click"/>
+        </Menu>
+        <ScrollViewer Name="viewer" Margin="5,20,5,5"
+                          VerticalScrollBarVisibility="Auto" 
+                          HorizontalScrollBarVisibility="Auto" Height="250" Width="450"/>
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Height="30">
+        </StackPanel>
+    </DockPanel>
+</Window>

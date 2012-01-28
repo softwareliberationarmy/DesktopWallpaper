@@ -1,0 +1,14 @@
+﻿<Window x:Class="DesktopWallpaperSetter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Desktop Wallpaper Setter" Height="600" Width="800" Loaded="Window_Loaded">
+    <StackPanel Orientation="Vertical">
+        <StackPanel Orientation="Horizontal">
+            <Label Name="lblInstructions" Margin="10 5 10 5">Select a wallpaper image to set:</Label>
+            <ComboBox Name="cmbImageList" Margin="10 5 10 5" Width="300" SelectionChanged="cmbImageList_SelectionChanged"></ComboBox>            
+            <Button Name="btnSet" Padding="15 0 15 0" Margin="10 5 10 5" Click="btnSet_Click">Set</Button>
+        </StackPanel>
+        <Image Name="imgPreview"  Height="400" Width="600" Margin="10 10 10 10"></Image>
+        
+    </StackPanel>
+</Window>
